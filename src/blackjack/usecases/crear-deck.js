@@ -12,6 +12,10 @@ export const crearDeck = ( tiposDeCarta, tiposEspeciales ) => {
     if ( !tiposDeCarta || tiposDeCarta.length === 0 ) 
      throw new Error( 'TiposDeCarta es obligatorio como un arreglo de string' );
     
+    if ( !tiposEspeciales || tiposEspeciales.length === 0 ) 
+     throw new Error( 'TiposDeCarta es obligatorio como un arreglo de string' );
+    
+
 
    let deck = [];
 
@@ -32,6 +36,3 @@ export const crearDeck = ( tiposDeCarta, tiposEspeciales ) => {
     return deck;
 }
 
-
-
-//export default crearDeck;
